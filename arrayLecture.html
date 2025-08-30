@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Arrays</title>
+    </head>
+    <body>
+        <input type="text" id="inputItem" placeholder="Enter item">
+        <button onclick="addItem()">Add Item</button>
+        <button onclick="removeItem()">Remove Item</button>
+
+        <div id="output"></div>
+
+        <script>
+            let items = [];
+            
+            // Function to add item(s)
+            function addItem() {
+                const input = document.getElementById("inputItem");
+                const value = input.value.trim();
+
+                if(value) {
+                    items.push(value);
+                    input.value = '';   // Clear the item stored
+
+                    displayItems();
+                }
+            }
+
+            // Function to display item(s)
+            function displayItems() {
+                const output = document.getElementById("output");
+                output.innerHTML = `<strong> Array Contents: </strong> [${items.join(', ')}] `;
+            }
+
+            // Function to remove item(s)
+            function removeItem() {
+                if(items.length > 0) {
+                    items.pop();
+                    displayItems();
+                } else {
+                    alert("Empty Items");
+                }
+            }
+        </script>
+    </body>
+</html>

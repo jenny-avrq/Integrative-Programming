@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objects</title>
+    </head>
+    <body>
+        <h1>Student Management System</h1>
+
+        <input type="text" id="name" placeholder="Enter Name">
+        <input type="number" id="age" placeholder="Enter Age">
+        <input type="text" id="grade" placeholder="Enter Grade">
+        
+        <button onclick="addStudent()">Add Student</button>
+
+        <h3>STUDENT LIST</h3>
+        <ul id="studentList"></ul>
+
+        <script>
+            // Declare an array that will hold the object: students
+            let students = [];
+
+            // Function to add student to the list
+            function addStudent()  {
+                let name = document.getElementById("name").value;
+                let age = document.getElementById("age").value;
+                let grade = document.getElementById("grade").value;
+
+                students.push({ name: name, age: age, grade: grade });
+                displayStudents();
+            }
+
+            //Function to display student list
+            function displayStudents() {
+                let list = document.getElementById("studentList");
+                list.innerHTML = " ";
+
+                // Loop through the array to get all the objects/students on the list
+                for(let i=0; i<students.length; i++) {
+                    let li = document.createElement("li");
+                    li.textContent = students[i].name + " - Age: " + students[i].age + ", Grade: " + students[i].grade;
+                    list.appendChild(li);
+                }
+            }
+        </script>
+    </body>
+</html>
