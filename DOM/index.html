@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Sari-Sari Store Management</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <h1>Sari-Sari Store Management</h1>
+        <h1>by Nina</h1>
+
+        <table id="table-items">
+            <tr>
+                <th>No.</th>
+                <th>Item Name</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <th colspan="2">TOTAL</th>
+                <td id="total"><b>0.00</b>
+            </tr>
+        </table>
+
+        <input type="text" id="item-name" placeholder="Enter item">
+        <input type="text" id="item-q" placeholder="Enter quantity">
+
+        <button onclick="addItems()">ADD ITEMS</button>
+
+        <script src="script.js"></script>
+    </body>
+</html>

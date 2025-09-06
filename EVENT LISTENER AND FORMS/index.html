@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Sari-Sari Store Management</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body id="body-tag" onload="connect()">
+
+        <h1>Sari-Sari Store Management</h1>
+        <h1 id="header-2" onmouseover="change()" onmouseout="change2()">by Nina</h1>
+
+        <table id="table-items">
+            <tr>
+                <th>Subject Code</th>
+                <th>Subject Description</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <th colspan="2">GWA</th>
+                <td id="total"><b>0.00</b>
+            </tr>
+        </table>
+
+        <input type="text" id="item-name" placeholder="Enter item">
+        <input type="text" id="item-q" placeholder="Enter quantity">
+
+        <button onclick="addItems()">ADD ITEMS</button>
+
+        <script src="script.js"></script>
+    </body>
+</html>
