@@ -1,0 +1,85 @@
+body {
+    background-color: #38495d;
+}
+
+h1 {
+    text-align: center;
+    color: #ECEEDF;
+}
+
+table {
+    align-items: center;
+    border-collapse: separate;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 5px;
+    border-spacing: 15px;
+}
+
+td, th, tr {
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    text-align: center;
+    margin: 100px;
+}
+
+#code-header, td:nth-child(1) {
+    background-color: #C7D9DD;
+    box-shadow: 5px 5px 5px #2b3948;
+}
+
+#desc-header, td:nth-child(2) {
+    background-color: #ECEEDF;
+    box-shadow: 5px 5px 5px #2b3948;
+}
+
+#grade-header, td:nth-child(3) {
+    background-color: #89A8B2;
+    box-shadow: 5px 5px 5px #2b3948;
+}
+
+#gwa-header, #gwa {
+    background-color: #7b4848;
+    color: #ECEEDF;
+    box-shadow: 10px 10px 5px #2b3948;
+}
+
+#inputs {
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+    text-align: center;
+}
+
+input, button {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 50px;
+    align-content: center;
+    margin: 4px;
+    box-shadow: 8px 8px 5px #2b3948;
+}
+
+#code {
+    width: 130px;
+}
+
+#description {
+    width: 300px;
+}
+
+#grade {
+    width: 80px;
+}
+
+button {
+    width: 150px;
+    background-color: #89A8B2;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #7b4848;
+    color: #ECEEDF;
+}

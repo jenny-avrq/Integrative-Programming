@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grade Calculator - Avorque</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <h1 id="header" onmouseout="change2()" onmouseover="change()">COURSE MANAGEMENT</h1>
+
+        <table id="table-items">
+            <tr>
+                <th id="code-header">Course Code</th>
+                <th id="desc-header">Course Description</th>
+                <th id="grade-header">Grade</th>
+            </tr>
+            <tr>
+                <th id="gwa-header" colspan="2">GWA</th>
+                <td id="gwa" colspan="2"><b>0.00</b></td>
+            </tr>
+        </table>
+
+        <div id="inputs"> 
+            <input type="text" id="code" placeholder="Enter Course Code">
+            <input type="text" id="description" placeholder="Enter Course Description">
+            <input type="text" id="grade" placeholder="Enter Grade">
+
+            <button onclick="addItems()">ADD COURSE</button>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
